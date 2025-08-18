@@ -1,0 +1,42 @@
+cpp
+
+include <iostream>
+
+include <string>
+
+using namespace std;
+
+// Default password
+const string correctPassword = "1234";
+
+// Function to check password
+bool unlock(string inputPassword) {
+    return inputPassword == correctPassword;
+}
+
+int main() {
+    string userInput;
+    int attempts = 0;
+    const int maxAttempts = 3;
+
+    cout << "🔐 Smart Lock System\n";
+
+    while (attempts < maxAttempts) {
+        cout << "Enter password: ";
+        cin >> userInput;
+
+        if (unlock(userInput)) {
+            cout << "✅ Access granted. Lock opened!\n";
+            break;
+        } else {
+            attempts++;
+            cout << "❌ Incorrect password. Attempts left: " << (maxAttempts - attempts) << "\n";
+        }
+    }
+
+    if (attempts == maxAttempts) {
+        cout << "🚫 Too many failed attempts. Lock remains closed.\n";
+    }
+
+    return 0;
+}
