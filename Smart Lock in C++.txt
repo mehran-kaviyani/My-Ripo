@@ -19,7 +19,7 @@ int main() {
     int attempts = 0;
     const int maxAttempts = 3;
 
-    cout << "🔐 Smart Lock System\n";
+    cout << "🔐 Smart Lock  System\n";
 
     while (attempts < maxAttempts) {
         cout << "Enter password: ";
@@ -41,3 +41,4 @@ int main() {
     return 0;
 
 }
+
