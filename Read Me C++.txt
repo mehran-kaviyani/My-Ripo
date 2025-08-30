@@ -1,6 +1,6 @@
 🛠️ Ideas for Expansion
 
-You can enhance this project by adding:c
+You can enhance this project by adding:
 
 - Fingerprint sensor or RFID module
 - Bluetooth or Wi-Fi connectivity for remote access
@@ -8,6 +8,7 @@ You can enhance this project by adding:c
 - Admin mode to change or reset the password.
 
 - Hardware integration with Arduino or Raspberry Pi.
+
 
 
 
