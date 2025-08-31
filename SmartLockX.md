@@ -20,7 +20,7 @@ while attempts < MAX_ATTEMPTS:
     user_hash = hash_password(user_input)
 
     if user_hash == stored_password_hash:
-        print("✅ Access granted. Welcome, Mehrzad!")
+        print("✅ Access granted. Welcome, M!")
         break
     else:
         attempts += 1
