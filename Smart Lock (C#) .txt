@@ -47,13 +47,14 @@ class SmartLockSystem
                 Console.WriteLine($"❌ Incorrect password. Attempt {attempts}/{MAX_ATTEMPTS}");
                 if (attempts == MAX_ATTEMPTS)
                 {
-                    Console.WriteLine("🚫 Too many failed attempts! System locked for 10 seconds.");
+                    Console.WriteLine("🚫 Too many failed attempts! System locked for 10 seconds...");
                     Thread.Sleep(10000); // Lock system for 10 seconds
                 }
             }
         }
     }
 }
+
 
 
 
