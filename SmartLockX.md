@@ -7,7 +7,7 @@ def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
 # Stored (hashed) password — this would normally be in a database
-stored_password_hash = hash_password(" @15gf45Rhs ")
+stored_password_hash = hash_password(" @15gf45Rhs")
 
 # Maximum allowed attempts
 MAX_ATTEMPTS = 3
@@ -24,7 +24,7 @@ while attempts < MAX_ATTEMPTS:
         break
     else:
         attempts += 1
-        print(f"❌ Incorrect password. Attempt {attempts}/{MAX_ATTEMPTS}")
+        print(f" it ❌ Incorrect password. Attempt {attempts}/{MAX_ATTEMPTS}")
         if attempts == MAX_ATTEMPTS:
             print("🚫 Too many failed attempts! System locked for 10 seconds.")
             time.sleep(10)
