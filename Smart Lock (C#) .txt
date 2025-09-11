@@ -28,7 +28,7 @@ class SmartLockSystem
         const int MAX_ATTEMPTS = 3;
         int attempts = 0;
 
-        Console.WriteLine("🔐 Welcome to the Smart Lock System...");
+        Console.WriteLine("🔐 Welcome to the Smart Lock System");
 
         while (attempts < MAX_ATTEMPTS)
         {
@@ -54,6 +54,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
