@@ -38,7 +38,7 @@ class SmartLockSystem
 
             if (userHash == storedPasswordHash)
             {
-                Console.WriteLine("✅ Access granted . Welcome to be , USER ");
+                Console.WriteLine("✅ Access granted . Welcome to be , USER  ");
                 break;
             }
             else
@@ -54,6 +54,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
