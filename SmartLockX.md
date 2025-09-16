@@ -13,7 +13,7 @@ stored_password_hash = hash_password(" @15gf45Rhs")
 MAX_ATTEMPTS = 3
 attempts = 0
 
-print("🔐 Welcome to the Smart Lock System ")
+print("🔐 Welcome to the Smart Lock System")
 
 while attempts < MAX_ATTEMPTS:
     user_input = input("Enter your password:")
