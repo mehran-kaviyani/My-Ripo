@@ -6,9 +6,9 @@ You can enhance this project by adding:
 ...
 - Bluetooth or Wi-Fi connectivity for remote access
 - Password encryption using SHA-256 or similar algorithms
-- Admin mode to change or reset the password.
-
+- Admin mode to change or reset the password
 - Hardware integration with Arduino or Raspberry Pi
+
 
 
 
