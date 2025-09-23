@@ -16,7 +16,7 @@ attempts = 0
 print("🔐 Welcome to the SmartLock System")
 
 while attempts < MAX_ATTEMPTS:
-    user_input = input("Enter your password:")
+    user_input = input("Enter your password: ")
     user_hash = hash_password(user_input)
 
     if user_hash == stored_password_hash:
