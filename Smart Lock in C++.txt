@@ -10,7 +10,7 @@ using namespace std;
 const string correctPassword = "1234";
 
 // Function to check password
-bool unlock( string inputPassword) {
+bool unlock( string inputPassword ) {
     return inputPassword == correctPassword;
 }
 
@@ -41,6 +41,7 @@ int main() {
     return 0;
 
 }
+
 
 
 
