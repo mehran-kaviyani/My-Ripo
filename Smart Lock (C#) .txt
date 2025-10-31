@@ -15,7 +15,7 @@ class SmartLockSystem
             byte[] hashBytes = sha256.ComputeHash( bytes );
             StringBuilder builder = new StringBuilder();
             foreach (byte b in hashBytes)
-                builder.Append(b.ToString(" x2 "));
+                builder.Append(b.ToString(" x2"));
             return builder.ToString();
         }
     }
@@ -54,6 +54,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
