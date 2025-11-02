@@ -7,15 +7,15 @@ using System.Threading;
 class SmartLockSystem
 {
     // FunctioN to hash the password using SHA256 dc
-    static string HashPassword(string password)
+    static string HashPassword(string password )
     {
         using (SHA256 sha256 = SHA256.Create())
         {
-            byte[] bytes = Encoding.UTF8.GetBytes( password);
+            byte[] bytes = Encoding.UTF8.GetBytes( password );
             byte[] hashBytes = sha256.ComputeHash( bytes );
             StringBuilder builder = new StringBuilder();
             foreach (byte b in hashBytes)
-                builder.Append(b.ToString(" x2"));
+                builder.Append(b.ToString(" x2 " ));
             return builder.ToString();
         }
     }
@@ -54,6 +54,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
