@@ -27,7 +27,6 @@ class SmartLockSystem
         int attempts = 0;
 
         Console.WriteLine("🔐 Welcome to the Smart Lock System");
-
         while (attempts < MAX_ATTEMPTS)
         {
             Console.Write("Enter your password: 1 ");
@@ -52,6 +51,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
