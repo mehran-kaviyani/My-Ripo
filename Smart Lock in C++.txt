@@ -23,7 +23,7 @@ int main() {
         cin >> userInput;
 
         if (unlock(userInput)) {
-            cout << "✅ Access  granted. Lock opened!\n ";
+            cout << "✅ Access  granted. Lock opened!\n  ";
             break;
         } else {
             attempts++;
@@ -38,6 +38,7 @@ int main() {
     return 0;
 
 }
+
 
 
 
