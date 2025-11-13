@@ -6,7 +6,7 @@ using System.Threading;
 
 class SmartLockSystem
 {
-    // FunctioN to hash the password using SHA256 dc
+   // FunctioN to hash the password using SHA256 dc
     static string HashPassword(string password)
     {
         using (SHA256 sha256 = SHA256.Create())
@@ -21,6 +21,7 @@ class SmartLockSystem
     }
     static void Main()
     {
+
         // Stored hashed password (you can generate this using HashPassword("@15gf45Rhs5"))
         string storedPasswordHash = HashPassword("@15gf45Rhs");
         const int MAX_ATTEMPTS = 3;
@@ -51,6 +52,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
