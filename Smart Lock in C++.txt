@@ -12,7 +12,6 @@ bool unlock( string inputPassword) {
     return inputPassword == correctPassword;
 }
 int main() {
-
     string userInput;
     int attempts = 0;
     const int maxAttempts = 3;
@@ -39,6 +38,7 @@ int main() {
     return 0;
 
 }
+
 
 
 
