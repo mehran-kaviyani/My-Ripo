@@ -5,7 +5,7 @@ include <iostream>
 include <string>
 using namespace std;
 // Default password
-const string correctPassword = " 123445 ";
+const string correctPassword = " 12345 ";
 
 // Function to check password
 bool unlock( string inputPassword) {
@@ -38,6 +38,7 @@ int main() {
     return 0;
 
 }
+
 
 
 
