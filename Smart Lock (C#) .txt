@@ -7,7 +7,7 @@ using System.Threading;
 class SmartLockSystem
 {
    // FunctioN to hash the password using SHA2516 dc
-    static string HashPassword(string password )
+    static string HashPassword(string password)
     {
         using (SHA256 sha256 = SHA256.Create ())
         {
@@ -27,7 +27,7 @@ class SmartLockSystem
         const int MAX_ATTEMPTS = 3;
         int attempts = 0;
 
-        Console.WriteLine("🔐 Welcome to the Smart Lock System!");
+        Console.WriteLine("🔐 Welcome to the Smart Lock System!  ");
         while (attempts < MAX_ATTEMPTS)
         {
             Console.Write("Enter your password: 1 ");
@@ -52,6 +52,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
