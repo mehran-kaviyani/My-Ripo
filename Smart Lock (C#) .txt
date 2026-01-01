@@ -7,9 +7,9 @@ using System.Threading;
 class SmartLockSystem
 {
    // FunctioN to hash the password using SHA2516 dc
-    static string HashPassword(string password )
+    static string HashPassword(string password  )
     {
-        using (SHA256 sha256 = SHA256.Create ())
+        using (SHA256 sha256 = SHA256.Create () )
         {
             byte[] bytes = Encoding.UTF8.GetBytes( password);
             byte[] hashBytes = sha256.ComputeHash( bytes) ;
@@ -52,6 +52,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
