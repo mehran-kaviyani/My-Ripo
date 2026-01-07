@@ -5,18 +5,18 @@ include <iostream>
 include <string>
 using namespace std;
 // Default password
-const string correctPassword = " 12345 ";
+const string correctPassword = " 1234 ";
 
 // Function to check password
 bool unlock( string inputPassword) {
-    return inputPassword == correctPassword;
+    return inputPassword == correctPassword ;
 }
 int main() {
     string userInput;
     int attempts = 0;
     const int maxAttempts = 3;
 
-    cout << "🔐 Smart Lock  System\n ";
+    cout << "🔐 Smart Lock  System\n  ";
 
     while (attempts < maxAttempts) {
         cout << "Enter password: ";
@@ -38,6 +38,7 @@ int main() {
     return 0;
 
 }
+
 
 
 
