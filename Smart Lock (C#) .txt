@@ -11,7 +11,7 @@ class SmartLockSystem
     {
         using (SHA256 sha256 = SHA256.Create ())
         {
-            byte[] bytes = Encoding.UTF8.GetBytes( password);
+            byte[] bytes = Encoding.UTF8.GetBytes( password );
             byte[] hashBytes = sha256.ComputeHash( bytes );
             StringBuilder builder = new StringBuilder() ;
             foreach (byte b in hashBytes)
@@ -22,7 +22,7 @@ class SmartLockSystem
     static void Main()
     {
 
-        // Stored hashed password (you can generate this using HashPassword(" @15gf45RhsS"))
+        // Stored hashed password (you can generate this using HashPassword(" @15gf45Rhss"))
         string storedPasswordHash = HashPassword("@15gf45Rhss ");
         const int MAX_ATTEMPTS = 3;
         int attempts = 0;
@@ -52,6 +52,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
