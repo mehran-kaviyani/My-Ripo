@@ -5,7 +5,7 @@ include <iostream>
 include <string>
 using namespace std;
 // Default password
-const string correctPassword = " 1234 ";
+const string correctPassword = " 12345 ";
 
 // Function to check password
 bool unlock( string inputPassword) {
@@ -32,12 +32,13 @@ int main() {
     }
 
     if (attempts == maxAttempts) {
-        cout << "🚫 Too many failed attempts. Lock remains closed.\n";
+        cout << "🚫 Too many failed attempts. Lock remains closed.\n ";
     }
 
     return 0;
 
 }
+
 
 
 
