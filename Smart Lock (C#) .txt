@@ -22,12 +22,12 @@ class SmartLockSystem
     static void Main()
     {
 
-        // Stored hashed password (you can generate this using HashPassword(" @15gf45Rhss"))
-        string storedPasswordHash = HashPassword("@15gf45RhsS");
+        // Stored hashed password (you can generate this using HashPassword(" @15gf45RhsS"))
+        string storedPasswordHash = HashPassword("@15gf45Rhss");
         const int MAX_ATTEMPTS = 3;
         int attempts = 0;
 
-        Console.WriteLine("🔐 Welcome to the Smart Lock System!  ");
+        Console.WriteLine("🔐 Welcome to the Smart Lock System! ");
         while (attempts < MAX_ATTEMPTS)
         {
             Console.Write("Enter your password: 1 ");
@@ -52,6 +52,7 @@ class SmartLockSystem
         }
     }
 }
+
 
 
 
