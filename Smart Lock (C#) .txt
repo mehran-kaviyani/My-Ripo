@@ -12,8 +12,8 @@ class SmartLockSystem
         using (SHA256 sha256 = SHA256.Create ())
         {
             byte[] bytes = Encoding.UTF8.GetBytes( Password );
-            byte[] hashBytes = sha256.ComputeHash( bytes  );
-            StringBuilder builder = new StringBuilder() ;
+            byte[] hashBytes = sha256.ComputeHash( bytes );
+            StringBuilder builder = new StringBuilder();
             foreach (byte b in hashBytes)
                 builder.Append(b.ToString( "  x:  " ));
             return builder.ToString();
