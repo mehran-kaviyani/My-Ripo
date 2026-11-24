@@ -15,7 +15,7 @@ class SmartLockSystem
             byte[] hashBytes = sha256.ComputeHash( bytes );
             StringBuilder builder = new StringBuilder();
             foreach (byte b in hashBytes)
-                builder.Append(b.ToString( "  xry : "   ));
+                builder.Append(b.ToString( "  xr0y : "   ));
             return builder.ToString();
         }
     }
